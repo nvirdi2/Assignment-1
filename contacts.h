@@ -1,9 +1,9 @@
 /* -------------------------------------------
-Name:
-Student number:
-Email:
-Section:
-Date:
+Name: Navdeep Virdi
+Student number: 166485193
+Email:nvirdi2@myseneca.ca
+Section: NAA
+Date: November 9th, 2020
 ----------------------------------------------
 Assignment: 1
 Milestone:  4
