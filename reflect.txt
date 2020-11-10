@@ -1,0 +1,27 @@
+Name:Navdeep Virdi
+Student number:166485193
+Email:nvirdi2@myseneca.ca
+Section:NAA
+Date:November 9th, 2020
+
+Reflection:
+    In the "a1ms4.c" there was no error because all of the work was in the other files and this file was mostly printing out statements and answers.
+  In header file called "contacts.h" there was one error that needed to be fixed and that was the length of the "middleInitial" because it started
+  at 0 and which means we need 6 characters. When running it with 5 characters the last name would print out where the middle initials (example:
+  N. O.Flint Rubble). When that was changed to 6 it printed out where it was supposed to. The next error was in the "contacts.c" file. On line 31 the
+  line was "scanf("%c%*s", &yesNo);" and that needed to be changed to "%c%c" because you are asking for a character and not a string variable. The next
+  error in the same file was on line 57 and that was the double quotation marks in the following line: "if (yesNo == "y" || yesNo == "Y")". The reason
+  we did not need a double quotation mark is to limit the single letters. This means every time that specific letter is typed the letter is limited to what
+  it can do. The last change made was in the same file for line 86 which readout "if (yesNo == 'y' && yesNo == 'Y')". The && needed to be removed and
+  replaced with the || because the statement would only work is "y" and "Y" was there but needed it for if any of them are entered. The && works to make
+  both conditions are true. The || is used to see if one of the conditions are true than continue. 
+    Looking at the files, the contact struct file was very helpful. This made it easier to locate each of the variables to edit rather then looking at 
+  one file with a lot of information. The structs were not easy to locate and edit do to this setup but when we called up each struct it is easy to manage
+  the data that is inputted because you do not have to find each variable, struct, and input. This is a much more organized way of handling all of the 
+  input and keeping it stored. However, in contact.c there are many areas where the code is repeated and there are so many ways to fix that. The first
+  change would be declaring the variable "char yesNo;" at the top before the for loops because that made it much easier and less repetitive. This
+  would allow the code to just bring up the variable to change to value instead of declaring it as 0 in each for loop. Since these loop conditions are 
+  very repetitive because "if (yesNo == 'y' || yesNo == 'Y')" is used in every loop and to change I would do if it does not equal because that would 
+  make it less repetitive and it would make it more unique. The "%*c" is repeated so much in the code but the meaning behind it is to ignore one of the
+  characters after reading it. This was helpful because we got to read the data and not assign it to a variable. Another very new line was "%[\n]"
+  and that was used to read any input the user is giving until the user does not press the enter key. The "%s" only reads and that is not helpful in this case. 
